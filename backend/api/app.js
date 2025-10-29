@@ -11,7 +11,7 @@ app.use("/api", appRouter);
 
 app.get('/', (req,res) => {
     return res.status(StatusCodes.OK).json({
-        message:"api running successfully",
+        message:"api is running successfully",
         status: StatusCodes.OK,
         data:null
     })
