@@ -22,11 +22,11 @@ const Navbar:React.FC = () => {
       <section className="sticky top-0">
  <nav className="bg-gradient-to-r from-white to-blue-200 shadow-lg">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-18">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-slate-900 tracking-tight hover:text-slate-950 transition-colors">
-              InspiroSurge
+              BigDreamo
             </Link>
           </div>
 
@@ -59,13 +59,13 @@ const Navbar:React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-indigo-700">
+        <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-slate-900 hover:bg-indigo-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-slate-900 hover:bg-blue-100 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
