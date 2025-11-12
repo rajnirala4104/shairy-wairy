@@ -12,7 +12,7 @@ const HeroSection = () => {
       }}
     >
         {/* Content Container */}
-      <div className="relative z-10 flex min-h-screen items-center text-center">
+      <div className="relative z-5 flex min-h-screen items-center text-center">
         <div className="container mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-3xl">
             {/* Heading */}
@@ -27,7 +27,7 @@ const HeroSection = () => {
             </p>
 
             {/* CTA Button */}
-            <button className="cursor-pointer bg-blue-400 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+            <button className="cursor-pointer -z-2 bg-blue-400 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
               JOIN NOW
             </button>
           </div>    
