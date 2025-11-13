@@ -8,7 +8,7 @@ const PersonalOdysseyHero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Column - Brand Name */}
           <div className="lg:pt-8">
-            <h1 className="text-2xl md:text-3xl font-light text-blue-950">
+            <h1 className="text-2xl md:text-3xl font-bold text-blue-950">
               Personal Odyssey
             </h1>
           </div>

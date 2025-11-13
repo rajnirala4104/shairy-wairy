@@ -1,5 +1,5 @@
 import { Fragment } from "react/jsx-runtime"
-import { HeroSection, PersonalOdysseyHero, PostSection } from "../components"
+import { HeroSection, NewsletterSection, NewsletterSignupSection, PersonalOdysseyHero, PostSection, TestimonialsSection } from "../components"
 
 export const Home = () => {
   return (
@@ -8,6 +8,8 @@ export const Home = () => {
         <HeroSection />
         <PersonalOdysseyHero />
         <PostSection />
+        <NewsletterSection />
+        <TestimonialsSection />
       </div>
     </Fragment>
   )
