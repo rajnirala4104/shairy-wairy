@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiArrowRight, FiArrowUp } from 'react-icons/fi';
+import { ScrollUpButton } from '.';
 
 interface BlogPost {
   id: number;
@@ -41,14 +42,9 @@ const PostSection: React.FC = () => {
     if (window.scrollY === 0) {
       setIsAtTop(true);
     } else {
-      console.log('User has scrolled down');
       setIsAtTop(false);
     }
   });
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <section className="bg-white py-12 md:py-16 lg:py-20 px-4">
@@ -93,7 +89,7 @@ const PostSection: React.FC = () => {
                 </p>
                 <a
                   href={post.link}
-                  className="inline-block text-blue-950 font-medium text-sm uppercase tracking-wide hover:text-blue-950 transition-colors duration-300"
+                  className="inline-block text-orange-700 font-medium text-sm uppercase tracking-wide hover:text-blue-950 transition-colors duration-300"
                 >
                   Continue Reading
                 </a>
@@ -103,17 +99,7 @@ const PostSection: React.FC = () => {
         </div>
 
         {/* Scroll to Top Button */}
-        {!isAtTop ? (
-          <button
-            onClick={scrollToTop}
-            className="fixed cursor-pointer bottom-6 right-6 w-12 h-12 bg-[#2c3e50] text-white rounded-full flex items-center justify-center hover:bg-[#1a252f] transition-colors duration-300 shadow-lg z-50"
-            aria-label="Scroll to top"
-          >
-            <FiArrowUp className="text-xl" />
-          </button>
-        ) : (
-          ""
-          )}
+        {!isAtTop ? ( <ScrollUpButton /> ) : ("")}
        </div>
     </section>
   );

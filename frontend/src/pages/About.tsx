@@ -1,11 +1,13 @@
 import { Fragment } from "react/jsx-runtime"
+import { AboutHeroSection, AboutQuoteSection, AboutSomething, AboutTheCompany } from "../components"
 
 export const About = () => {
   return(
     <Fragment>
-      <span>
-        About
-      </span>
+      <AboutHeroSection />
+      <AboutTheCompany /> 
+      <AboutQuoteSection />
+      <AboutSomething />
     </Fragment>
   )
 }
